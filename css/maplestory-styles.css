@@ -817,7 +817,9 @@ input.daily[type="checkbox"]:not(checked) {
 }
 
 @media (hover: none) {
-  input.daily[type="checkbox"]:not(:checked):before {
+  input.daily[type="checkbox"]:not(:checked):before,
+  input.weekly_other[type="checkbox"]:not(:checked):before,
+  input.weekly_boss[type="checkbox"]:not(:checked):before {
     width: 0;
     height: 0;
   }
