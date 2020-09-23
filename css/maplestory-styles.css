@@ -673,7 +673,7 @@
       rgba(0, 0, 0, 0.4) 25%,
       rgba(0, 0, 0, 0.7) 100%
     ),
-    url("/assets/img/dailies_background.png");
+    url("./assets/img/dailies_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -687,7 +687,7 @@
       rgba(0, 0, 0, 0.4) 25%,
       rgba(0, 0, 0, 0.7) 100%
     ),
-    url("/assets/img/weeklies_background.png");
+    url("./assets/img/weeklies_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
