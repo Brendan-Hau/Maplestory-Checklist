@@ -1,6 +1,7 @@
 /* Page Loader */
 $(window).on("load", function () {
   $(".loader-wrapper").fadeOut("slow");
+  document.getElementsByTagName("body")[0].style.overflowY = "scroll";
 });
 
 /* Navbar */

@@ -6,7 +6,13 @@
 }
 
 html {
+  min-height: 100%;
   background: #000000;
+}
+
+body {
+  height: 100%;
+  overflow-y: hidden;
 }
 
 /* ==================================== Page Loader =========================================== */
@@ -30,6 +36,8 @@ html {
   --box-border-radius: 15%;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   background: #2f2f2f;
   z-index: 100;
 }
