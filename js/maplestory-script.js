@@ -447,10 +447,10 @@ function initializeDailyClock(id, endtime) {
       (21600000 >= t.total && t.total >= 14400000)
     ) {
       document.getElementById("ursus").style.backgroundImage =
-        "url(assets/img/dailies_ursus_x2v2.png)";
+        "url(./assets/img/dailies_ursus_x2v2.png)";
     } else {
       document.getElementById("ursus").style.backgroundImage =
-        "url(assets/img/dailies_ursus.png)";
+        "url(./assets/img/dailies_ursus.png)";
     }
   }
 
