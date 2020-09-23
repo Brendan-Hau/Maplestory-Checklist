@@ -549,7 +549,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
   margin: 1rem;
 }
 
@@ -773,6 +773,7 @@
 }
 .daily {
   margin: 10px 10px;
+  -webkit-tap-highlight-color: transparent;
 }
 input.daily[type="checkbox"] {
   -webkit-appearance: none;
@@ -849,7 +850,8 @@ input.daily[type="checkbox"]:not(checked) {
 }
 .weekly_other,
 .weekly_boss {
-  margin: 5px 10px 5px 10px;
+  margin: 10px 10px;
+  -webkit-tap-highlight-color: transparent;
 }
 input.weekly_other[type="checkbox"],
 input.weekly_boss[type="checkbox"] {
