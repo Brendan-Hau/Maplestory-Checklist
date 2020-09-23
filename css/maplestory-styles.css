@@ -817,15 +817,6 @@ input.daily[type="checkbox"]:not(checked) {
   transition: 0s;
 }
 
-@media (hover: none) {
-  input.daily[type="checkbox"]:not(:checked):before,
-  input.weekly_other[type="checkbox"]:not(:checked):before,
-  input.weekly_boss[type="checkbox"]:not(:checked):before {
-    width: 0;
-    height: 0;
-  }
-}
-
 /* ==================================== Weeklies =========================================== */
 .weeklies--subheading {
   text-align: center;
@@ -908,6 +899,15 @@ input.weekly_boss[type="checkbox"]:checked {
 input.weekly_other[type="checkbox"]:not(checked),
 input.weekly_boss[type="checkbox"]:not(checked) {
   transition: 0s;
+}
+
+@media (hover: none) {
+  input.daily[type="checkbox"]:not(:checked):before,
+  input.weekly_other[type="checkbox"]:not(:checked):before,
+  input.weekly_boss[type="checkbox"]:not(:checked):before {
+    width: 0;
+    height: 0;
+  }
 }
 
 /* ==================================== Animations =========================================== */
