@@ -1,3 +1,12 @@
+/* Reset to Top of Page */
+$(document).ready(function () {
+  history.scrollRestoration = "manual";
+  $(window).on("beforeunload", function () {
+    $(window).scrollTop(0);
+  });
+  document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+});
+
 /* Page Loader */
 $(window).on("load", function () {
   $(".loader-wrapper").fadeOut("slow");
