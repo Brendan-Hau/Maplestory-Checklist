@@ -815,16 +815,12 @@ input.daily[type="checkbox"]:not(:checked):before {
   border-radius: 50%;
   background: #ffffff;
   transition: 0.5s;
-  transform: scale(1);
   z-index: -1;
 }
 input.daily[type="checkbox"]:not(:checked):hover:before {
   transform: scale(1.1);
   box-shadow: 0 0 15px #fff59e;
   filter: blur(8px);
-}
-input.daily[type="checkbox"]:not(:checked):before:focus {
-  outline: none;
 }
 input.daily[type="checkbox"]:focus {
   outline: none;
@@ -834,7 +830,7 @@ input.daily[type="checkbox"]:checked {
   transition: 0.7s;
   filter: grayscale(100%) brightness(70%);
 }
-input.daily[type="checkbox"]:not(checked) {
+input.daily[type="checkbox"]:not(:checked) {
   transition: 0s;
 }
 
@@ -904,24 +900,18 @@ input.weekly_boss[type="checkbox"]:not(:checked):hover:before {
   box-shadow: 0 0 15px #a200ff;
   filter: blur(8px);
 }
-input.weekly_other[type="checkbox"]:not(:checked):before:focus,
-input.weekly_boss[type="checkbox"]:not(:checked):before:focus {
-  outline: none;
-}
 input.weekly_other[type="checkbox"]:focus,
 input.weekly_boss[type="checkbox"]:focus {
   outline: none;
 }
 input.weekly_other[type="checkbox"]:checked,
 input.weekly_boss[type="checkbox"]:checked {
-  /*
   animation: shake 0.35s;
-  */
   transition: 0.7s;
   filter: grayscale(100%) brightness(70%);
 }
-input.weekly_other[type="checkbox"]:not(checked),
-input.weekly_boss[type="checkbox"]:not(checked) {
+input.weekly_other[type="checkbox"]:not(:checked),
+input.weekly_boss[type="checkbox"]:not(:checked) {
   transition: 0s;
 }
 
@@ -929,8 +919,7 @@ input.weekly_boss[type="checkbox"]:not(checked) {
   input.daily[type="checkbox"]:not(:checked):before,
   input.weekly_other[type="checkbox"]:not(:checked):before,
   input.weekly_boss[type="checkbox"]:not(:checked):before {
-    width: 0;
-    height: 0;
+    display: none;
   }
 }
 
