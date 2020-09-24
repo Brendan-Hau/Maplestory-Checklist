@@ -1,17 +1,23 @@
+// ============================================================================================================
+// Page Rendering
+// ============================================================================================================
+
 /* Reset to Top of Page */
 $(document).ready(function () {
   history.scrollRestoration = "manual";
-  $(window).on("beforeunload", function () {
-    $(window).scrollTop(0);
-  });
-  document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+  $(window).scrollTop(0);
+  document.getElementById("content-container").style.display = "block";
 });
 
 /* Page Loader */
-$(window).on("load", function () {
+window.onload = function () {
   $(".loader-wrapper").fadeOut("slow");
   document.getElementsByTagName("body")[0].style.overflowY = "scroll";
-});
+};
+
+// ============================================================================================================
+// Navigation Bar
+// ============================================================================================================
 
 /* Navbar */
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
