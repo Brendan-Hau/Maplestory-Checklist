@@ -806,6 +806,9 @@ input.daily[type="checkbox"] {
   background-position: center;
   background-size: contain;
   cursor: pointer;
+  -webkit-background-clip: border-box;
+  -moz-background-clip: border-box;
+  background-clip: border-box;
 }
 input.daily[type="checkbox"]:not(:checked):before {
   content: "";
@@ -819,7 +822,6 @@ input.daily[type="checkbox"]:not(:checked):before {
 }
 input.daily[type="checkbox"]:not(:checked):hover:before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #fff59e;
   filter: blur(8px);
 }
 input.daily[type="checkbox"]:focus {
@@ -870,6 +872,8 @@ input.daily[type="checkbox"]:not(:checked) {
 }
 input.weekly_other[type="checkbox"],
 input.weekly_boss[type="checkbox"] {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -881,6 +885,9 @@ input.weekly_boss[type="checkbox"] {
   background-position: center;
   background-size: contain;
   cursor: pointer;
+  -webkit-background-clip: border-box;
+  -moz-background-clip: border-box;
+  background-clip: border-box;
 }
 input.weekly_other[type="checkbox"]:not(:checked):before,
 input.weekly_boss[type="checkbox"]:not(:checked):before {
@@ -897,7 +904,6 @@ input.weekly_boss[type="checkbox"]:not(:checked):before {
 input.weekly_other[type="checkbox"]:not(:checked):hover:before,
 input.weekly_boss[type="checkbox"]:not(:checked):hover:before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #a200ff;
   filter: blur(8px);
 }
 input.weekly_other[type="checkbox"]:focus,
