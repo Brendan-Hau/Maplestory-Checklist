@@ -793,6 +793,8 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 input.daily[type="checkbox"] {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -828,9 +830,7 @@ input.daily[type="checkbox"]:focus {
   outline: none;
 }
 input.daily[type="checkbox"]:checked {
-  /*
   animation: shake 0.35s;
-  */
   transition: 0.7s;
   filter: grayscale(100%) brightness(70%);
 }
